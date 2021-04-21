@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <!-- <van-button type="primary">默认按钮</van-button> -->
-    <div>你好</div>
+    <div>
+      <i class="iconfont icon-shangcheng"></i>
+    </div>
   </div>
 </template>
 
