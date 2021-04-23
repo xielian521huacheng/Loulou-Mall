@@ -1,10 +1,15 @@
 <template>
-  <div>详情页面</div>
+  <div>
+    <s-header :title="'详情'"> </s-header>
+  </div>
 </template>
-
 <script>
-export default {};
+import sHeader from "@/components/SimpleHeader";
+export default {
+  name: "Detail",
+  components: {
+    sHeader,
+  },
+};
 </script>
-
-<style>
-</style>
+<style lang="less" scoped></style>

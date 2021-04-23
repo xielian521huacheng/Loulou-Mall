@@ -2,26 +2,22 @@
   <div class="nav-bar">
     <ul class="nav-list">
       <router-link tag="li" class="nav-list-item active" to="home">
-        <span>首页</span>
+        <i class="iconfont icon-home"></i> <span>首页</span>
       </router-link>
       <router-link tag="li" class="nav-list-item" to="category">
-        <span>分类</span>
+        <i class="iconfont icon-category"></i> <span>分类</span>
       </router-link>
       <router-link tag="li" class="nav-list-item" to="cart">
-        <span>购物车</span>
+        <i class="iconfont icon-cart"></i> <span>购物车</span>
       </router-link>
       <router-link tag="li" class="nav-list-item" to="user">
-        <span>我的</span>
+        <i class="iconfont icon-user"></i> <span>我的</span>
       </router-link>
     </ul>
   </div>
-</template>
-
-<script>
+</template><script>
 export default {};
-</script>
-
-<style lang="less" scoped>
+</script><style lang="less" scoped>
 @import "../common/style/mixin";
 .nav-bar {
   position: fixed;
@@ -38,12 +34,12 @@ export default {};
     .fj();
     flex-direction: row;
     padding: 0;
-    nav-list-item {
+    .nav-list-item {
       display: flex;
       flex: 1;
       flex-direction: column;
       text-align: center;
-      color: #d45;
+      color: #666;
       &.router-link-active {
         color: @primary;
       }

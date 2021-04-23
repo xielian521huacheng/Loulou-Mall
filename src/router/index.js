@@ -50,6 +50,31 @@ const routes = [
       index: 2
     }
   },
+  {
+    path: '/login', 
+    name: 'login', 
+    component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue'),
+    meta: { 
+    index: 2
+  }
+  },
+  {
+    path: '/address', 
+    name: 'address', 
+    meta: { 
+        component: () => import(/* webpackChunkName: "address" */ '../views/Address.vue'),
+    index: 2
+  }
+  },
+  {
+    path: '/address-edit', 
+    name: 'address-edit', 
+    meta: { 
+        component: () => import(/* webpackChunkName: "address-edit" */ '../views/AddressEdit.vue'),
+    index: 3
+  }
+  },
+
 ]
 const router = new VueRouter({ 
     routes,
